@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(134, 177, 247);
+}
+
+.testo{
+    display: none;
+    font-size: larger;
+    vertical-align: top;
+    width: 100px;
+    color: brown;
+    background-color: #BFDDDA;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#mario:hover .testo{
+    display: inline-block;
+}
+
+#mario,#fungo{
+    position: absolute;
+}
+
+#mario{
+    left: 25%;
+    top: 27%;
+}
+
+#mario img{
+    width: 100px;
+}
+
+#fungo{
+    left: 60%;
+    top: 37%;
+}
+
+#fungo img{
+    width: 50px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.col-12 img{
+    width: 10%;
+}
+
+.row-fluid{
+    margin-bottom: 30px;
+}
+
+.second{
+    margin-top: 200px;
+} 
+
+
+
+@media screen and (max-width: 480px){
+
+    [class^="col-"] {
+        width: 100%;
+        background-color: brown;
+    }
+
+    [class^="col-"] img{
+        display: none;
+    }
+}
